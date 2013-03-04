@@ -41,7 +41,8 @@ main:	save %sp, -96, %sp			!Create a location to save
 !***************************************************************
 !
 !***************************************************************		
-loop:	call getchar					!get imput value
+loop:	
+		call getchar				!get imput value
 		nop
 		mov %o0,imput_r				!store value in imput_r
 		
