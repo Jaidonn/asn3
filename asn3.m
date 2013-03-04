@@ -88,7 +88,7 @@ print:
 		bne invalid				!exits print to go to invalid(rem !=0)
 		be valid				!exits print to go to valid(rem is equal 0)
 
-valid:		~how to print a v?
+valid:		
 		mov VALID, %o0				!move 'V' to an output register
 		call writeChar				!Print 'V' to the screen
 		nop
